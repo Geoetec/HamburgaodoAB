@@ -50,6 +50,7 @@ logo img a:hover {
     position: relative;
     z-index: 10;
     gap: 0.5rem;
+    padding-top: 105px;
 }
 #carouselExampleInterval img {
     height: auto;
@@ -154,3 +155,26 @@ logo img a:hover {
     margin: 14px auto 50px;
 }
 /* Fim CSS Galeria */
+/* Início CSS Footer*/
+.rodape {
+    padding: 50px 50px 0;
+}
+.rodape .info-contato p {
+    margin: 0px;
+}
+.rodape a {
+    text-decoration:none;
+    color: #000;
+    font-size: 13px;
+}
+.rodape a:hover {
+    font-weight: bold;
+}
+.rodape .redes-socias {
+    display: inline-block;
+}
+.rodape .redes-socias im {
+    width: 45px;
+    height: 40px;
+}
+
