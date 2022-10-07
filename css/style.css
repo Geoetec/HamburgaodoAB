@@ -53,7 +53,71 @@ logo img a:hover {
     padding-top: 105px;
 }
 #carouselExampleInterval img {
-    height: auto;
+    height: 500px;
+}
+
+@media (max-width: 600px) {
+    #menu {
+        display: block; 
+        position:absolute;
+        width: 15rem;
+        top: 70px;
+        right:0px;
+        background:#e7e7e7;
+        transition: 0.6px;
+        z-index: 1000px;
+        height: 0px;
+        padding-left: 5px;
+        visibility: hidden;
+        overflow-y: hidden;
+    }
+
+    #menu li {
+        padding-top: 30px;
+        padding-bottom: 0px;
+        margin: 0 1rem;
+        border-bottom: 2px solid rgba(red, green, blue, alpha);
+    }  
+    #nav.active #menu {
+        height: calc(100vh - 70px); /* Em px é o tamanhoo da faixa do menu*/
+        visibility: visible;
+        overflow-y: hidden;
+    }
+    #btn-mobile {
+        display: flex;
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+        gap: 0.5rem;
+    }
+    #hamburger {
+        border-top:4px solid;
+        width: 25px;
+    }
+    #hamburger::after,
+    #hamburger::before {
+        content: '';
+        display: block;
+        width: 25px;
+        height: 2px;
+        background: currentColor;
+        margin-top: 5px;
+        transition: 0.3s;
+        position: relative;
+        border-bottom: 4px solid;
+    }
+    #nav.active #hamburguer {
+        border-top-color: transparent;
+    }
+    #nav.active #hamburguer::before {
+        transform: rotate(135deg);
+    }
+    #nav.active #hamburguer::after {
+        transform: rotate(-135deg);
+        top: -7px;
+    }
 }
 
 /* CSS configurando Banner */
@@ -173,8 +237,11 @@ logo img a:hover {
 .rodape .redes-socias {
     display: inline-block;
 }
-.rodape .redes-socias im {
+.rodape .redes-socias img {
     width: 45px;
     height: 40px;
 }
-
+.rodape p.direitos {
+    text-align: center;
+    margin-top: 40px;
+}
