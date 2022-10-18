@@ -33,7 +33,7 @@ logo img a:hover {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: rgb(243, 179, 243);    
+    background: rgb(243, 231, 179);    
 }
 #menu {
     display: flex ;
@@ -60,12 +60,12 @@ logo img a:hover {
     #menu {
         display: block; 
         position:absolute;
-        width: 15rem;
+        width: 15em;
         top: 70px;
         right:0px;
         background:#e7e7e7;
-        transition: 0.6px;
-        z-index: 1000px;
+        transition: 0.6s;
+        z-index: 1000;
         height: 0px;
         padding-left: 5px;
         visibility: hidden;
@@ -122,7 +122,8 @@ logo img a:hover {
     .embed-container {
         position: relative;
         padding-bottom: 0;
-        height: 35px;
+        height: auto
+        ;
         max-width: 100%;
         margin-top: 10px;
         margin-bottom: 0;
@@ -148,7 +149,7 @@ logo img a:hover {
     height: 500px;
     padding: 50px; 
     margin: 18px auto;
-    background-color: blueviolet;
+    background-color: rgb(226, 168, 43);
 }
 .section-banner-home img {
     height: 400px;
@@ -200,7 +201,7 @@ logo img a:hover {
 }
 /* Início CSS Novidades */
 .novidades {
-    background-color: #082373;
+    background-color: #734108;
     padding: 50px;
 }
 .novidades .text-body{
